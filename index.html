@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Mi Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+<div class="contenedor" id="MiCalcu">
+
+    <input id="valor1" type="number" placeholder="ingrese un numero: ">
+<br>
+<br>
+    <input id="valor2" type="number" placeholder="ingrese otro numero: " >
+ 
+    <br>
+    
+    <p class="titulo">¿Que tipo de operacion le gustaria realizar?</p>
+
+<table>  
+       <tr>
+             <th><button class="signos" onclick="sumar();eleccion()">+</button></th>
+             <th><button class="signos" onclick="Restar();eleccion()">-</button></th>
+       </tr> 
+       <tr>
+            <th><button class="signos" onclick="multiplicar();eleccion()">x</button></th>
+            <th><button class="signos" onclick="dividir();eleccion()">/</button></th>
+      </tr>
+</table> 
+
+ <p class="titulo">La operacion elegida es: <span id="eleccion"></span> </p>
+
+ <br>
+
+    <p class="titulo">El resultado de su operacion es: <span id="el-resultado"></span><p>
+
+</div>
+
+<script src="./funciones.js"></script>
+
+</body>
+</html>
